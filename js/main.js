@@ -1,9 +1,18 @@
-/*==== Parallax ==============*/
-/*function parallax(event) {
-	this.querySelectorAll('.layer').forEach(layer => {
-		let speed = layer.getAttribute('data-speed');
-		layer.style.transform = `translateY(${event.clientY*speed/10}px)`
-	});
+/*==== Mobile Menu ============================*/
+
+let menuBtn = document.querySelector('.mobile-menu-btn'),
+	mobileMenu = document.querySelector('.mobile-menu'),
+	menuClose = document.querySelector('.close-icon'),
+	menuLink = document.getElementsByClassName('mobile-menu-link');
+
+menuBtn.onclick = function() {
+	 mobileMenu.style.left = '0';
 }
 
-document.addEventListener('scroll', parallax);*/
+menuClose.onclick = function() {
+	 mobileMenu.style.left = '-100%';
+}
+
+menuLink.onclick = function() {
+	 mobileMenu.style.left = '-100%';
+}
