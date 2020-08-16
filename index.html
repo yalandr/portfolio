@@ -4,9 +4,10 @@
 	<meta charset="UTF-8">
 	<meta name="description" content="Frontend Developer Portfolio">
 	<meta name="Keywords" content="Frontend Developer Portfolio">
-	<meta content="width=device-width, initial-scale=1" name="viewport">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
 	<meta http-equiv = "X-UA-Compatible" content = "IE=edge" >
 	<title>Andriy Yalunin | Frontend Developer</title>
+	<link rel="SHORTCUT ICON" href="img/icons/favicon.png" type="image/x-icon">
 	<link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;700;800;900&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/animate.css">
@@ -19,7 +20,7 @@
 	<nav class="sidebar-nav animate__animated animate__slideInLeft">
 		<div class="main-logo-block">
 			<h1 class="main-logo">
-				<a href="#intro-section"><span class="text-montserrat text-bold space-02">ANDRIY</span><br> <span class="text-montserrat text-light">YALUNIN</span></a></h1>
+				<a href="#intro-section"><span class="text-montserrat text-bold space-03">ANDRIY</span><br> <span class="text-montserrat text-light">YALUNIN</span></a></h1>
 			<h3 class="main-logo-subtitle">Frontend Developer</h3>
 		</div>
 		<ul class="nav-list">
@@ -62,6 +63,40 @@
 	</nav>
 
 	<main class="main-content">
+		<div class="mobile-menu-btn">
+			<img src="img/icons/menu.png" class="mobile-menu-icon" alt="menu">
+		</div>
+
+		<div class="mobile-menu">
+			<ul class="mobile-nav-list">
+				<img src="img/icons/close.png" class="close-icon" alt="close">
+				<li class="mobile-nav-item text-montserrat">
+					<a href="#about-section" class="mobile-menu-link"><div class="mobile-menu-item-dash about-dash"></div> about</a>
+				</li>
+				<li class="mobile-nav-item text-montserrat">
+					<a href="#projects-section" class="mobile-menu-link"><div class="mobile-menu-item-dash projects-dash"></div>
+					projects</a>
+				</li>
+				<li class="mobile-nav-item text-montserrat">
+					<a href="#skills-section" class="mobile-menu-link"><div class="mobile-menu-item-dash skills-dash"></div>
+					skills</a>
+				</li>
+				<li class="mobile-nav-item text-montserrat">
+					<a href="#contact-section" class="mobile-menu-link"><div class="mobile-menu-item-dash contact-dash"></div>
+					contact</a>
+				</li>
+				<li class="mobile-nav-item text-montserrat">
+					<a href="#resume-section" class="mobile-menu-link"><div class="mobile-menu-item-dash resume-dash"></div>
+					resume</a>
+				</li>
+			</ul>
+		</div>
+
+		<div class="mobile-header">
+			<h1 class="main-logo">
+				<span class="text-montserrat text-bold space-02">ANDRIY </span><span class="text-montserrat text-light">YALUNIN</span></h1>
+			<h3 class="main-logo-subtitle">Frontend Developer</h3>
+		</div>
 		<section id="intro-section" class="intro-section">
 			<div class="intro-heading-block">
 				<h2 class="intro-heading animate__animated animate__flipInX animate__delay-2s">Pure Code</h2>
@@ -124,14 +159,14 @@
 		</section>
 
 		<section id="about-section" class="about-section">
-			<h2 class="section-heading about-heading animate__animated animate__fadeInUp wow" data-wow-offset="40">_ ME</h2>
 			<div class="section-content center-content">
+				<h2 class="section-heading about-heading animate__animated animate__fadeInUp wow" data-wow-offset="40">_ ME</h2>
 				<p class="cite animate__animated animate__fadeInUp wow" data-wow-offset="40">
-					<i>Frontend is Great.</i>
+					<i><b>Frontend is Great.</b></i>
 				</p>
 				<p class="section-text animate__animated animate__fadeInUp wow" data-wow-offset="40">
 					Hey, I'm Andriy - Frontend Developer based in Kyiv. <br>
-					I am working on web interfaces that should be good looking and simple and enjoyable to use. To achieve these goals, I use a number of front-end technologies, such as html5, css3, javascript, vue js etc. <br>
+					I am working on web interfaces that should be good looking and simple and enjoyable to use. To achieve these goals, I use a number of front-end technologies, such as <span>html5</span>, <span>css3</span>, <span>javascript</span>, <span>vue js</span> etc. <br>
 					In the process I use the principles of engineering - control and testing of components at each stage of the project in order to achieve the best result. <br>
 					If you are interested in cooperation and transforming your ideas into a great projects, please contact me in any way convenient for you.
 				</p>
@@ -156,98 +191,217 @@
 		</section>
 
 		<section id="projects-section" class="projects-section">
-			<h2 class="section-heading projects-heading animate__animated animate__fadeInUp wow" data-wow-offset="40">_ DONE</h2>
-			<div class="section-content projects-wrapper">
-				<div class="project-card project-card-toleft animate__animated animate__fadeInUp wow" data-wow-offset="40">
-					<div class="project-card-number number-toright text-montserrat">01</div>
-					<div class="project-card-img atelier"></div>
-					<div class="project-card-text">
-						<h3 class="project-name"><sup>01</sup>_ Atelier Website</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, dolores!</p>
-						<button class="btn btn-to-website">VISIT</button>
+			<div class="center-content">
+				<h2 class="section-heading projects-heading animate__animated animate__fadeInUp wow" data-wow-offset="40">_ DONE</h2>
+			</div>
+			<div class="projects-content">
+				<div class="projects-grid">
+					<div class="project-card card-01 animate__animated animate__fadeInUp wow" data-wow-offset="40">
+						<img src="img/projects/atelier.JPG" class="project-card-img" alt="project">
+						<div class="project-card-content">
+							<div class="project-card-text">
+								<h3 class="project-name">fashion atelier</h3>
+								<p class="project-description">website</p>
+							</div>
+							<a href="projects/project01/index.html" class="project-link" target="_blank">see <img src="img/icons/arrow-right.png" class="arrow-right" alt="arrow-right"></a>
+						</div>
 					</div>
-				</div>
-				<div class="project-card project-card-toright animate__animated animate__fadeInUp wow" data-wow-offset="40">
-					<div class="project-card-number number-toleft text-montserrat">02</div>
-					<div class="project-card-img"></div>
-					<div class="project-card-text">
-						<h3 class="project-name">project 02</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, dolores!</p>
-						<button class="btn btn-to-website">VISIT</button>
+					<div class="project-card card-02 animate__animated animate__fadeInUp wow" data-wow-offset="40">
+						<img src="img/projects/doors.JPG" class="project-card-img" alt="project">
+						<div class="project-card-content">
+							<div class="project-card-text">
+								<h3 class="project-name">door shop</h3>
+								<p class="project-description">landing page</p>
+							</div>
+							<a href="projects/project01/index.html" class="project-link" target="_blank">see <img src="img/icons/arrow-right.png" class="arrow-right" alt="arrow-right"></a>
+						</div>
 					</div>
-				</div>
-				<div class="project-card project-card-toleft animate__animated animate__fadeInUp wow" data-wow-offset="40">
-					<div class="project-card-number number-toright text-montserrat">03</div>
-					<div class="project-card-img"></div>
-					<div class="project-card-text">
-						<h3 class="project-name">project 01</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, dolores!</p>
-						<button class="btn btn-to-website">VISIT</button>
+					<div class="project-card card-03 animate__animated animate__fadeInUp wow" data-wow-offset="40">
+						<img src="img/projects/printing.JPG" class="project-card-img" alt="project">
+						<div class="project-card-content">
+							<div class="project-card-text">
+								<h3 class="project-name">printing company</h3>
+								<p class="project-description">landing page</p>
+							</div>
+							<a href="projects/project01/index.html" class="project-link" target="_blank">see <img src="img/icons/arrow-right.png" class="arrow-right" alt="arrow-right"></a>
+						</div>
 					</div>
-				</div>
-				<div class="project-card project-card-toright animate__animated animate__fadeInUp wow" data-wow-offset="40">
-					<div class="project-card-number number-toleft text-montserrat">04</div>
-					<div class="project-card-img"></div>
-					<div class="project-card-text">
-						<h3 class="project-name">project 02</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, dolores!</p>
-						<button class="btn btn-to-website">VISIT</button>
+					<div class="project-card card-04 animate__animated animate__fadeInUp wow" data-wow-offset="40">
+						<img src="img/projects/generator.JPG" class="project-card-img" alt="project">
+						<div class="project-card-content">
+							<div class="project-card-text">
+								<h3 class="project-name">passw generator</h3>
+								<p class="project-description">javascript application</p>
+							</div>
+							<a href="projects/project01/index.html" class="project-link" target="_blank">see <img src="img/icons/arrow-right.png" class="arrow-right" alt="arrow-right"></a>
+						</div>
 					</div>
-				</div>
-				<div class="project-card project-card-toleft animate__animated animate__fadeInUp wow" data-wow-offset="40">
-					<div class="project-card-number number-toright text-montserrat">05</div>
-					<div class="project-card-img"></div>
-					<div class="project-card-text">
-						<h3 class="project-name">project 01</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, dolores!</p>
-						<button class="btn btn-to-website">VISIT</button>
+					<div class="project-card card-05 animate__animated animate__fadeInUp wow" data-wow-offset="40">
+						<img src="img/projects/sarmat.JPG" class="project-card-img" alt="project">
+						<div class="project-card-content">
+							<div class="project-card-text">
+								<h3 class="project-name">building company</h3>
+								<p class="project-description">website</p>
+							</div>
+							<a href="projects/project01/index.html" class="project-link" target="_blank">see <img src="img/icons/arrow-right.png" class="arrow-right" alt="arrow-right"></a>
+						</div>
 					</div>
-				</div>
-				<div class="project-card project-card-toright animate__animated animate__fadeInUp wow" data-wow-offset="40">
-					<div class="project-card-number number-toleft text-montserrat">06</div>
-					<div class="project-card-img"></div>
-					<div class="project-card-text">
-						<h3 class="project-name">project 02</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, dolores!</p>
-						<button class="btn btn-to-website">VISIT</button>
+					<div class="project-card card-06 animate__animated animate__fadeInUp wow" data-wow-offset="40">
+						<img src="img/projects/wedding.JPG" class="project-card-img" alt="project">
+						<div class="project-card-content">
+							<div class="project-card-text">
+								<h3 class="project-name">wedding invitation</h3>
+								<p class="project-description">landing page</p>
+							</div>
+							<a href="projects/project01/index.html" class="project-link" target="_blank">see <img src="img/icons/arrow-right.png" class="arrow-right" alt="arrow-right"></a>
+						</div>
+					</div>
+					<div class="project-card card-07 animate__animated animate__fadeInUp wow" data-wow-offset="40">
+						<img src="img/projects/shovel.JPG" class="project-card-img" alt="project">
+						<div class="project-card-content">
+							<div class="project-card-text">
+								<h3 class="project-name">folding shovel</h3>
+								<p class="project-description">landing page</p>
+							</div>
+							<a href="projects/project01/index.html" class="project-link" target="_blank">see <img src="img/icons/arrow-right.png" class="arrow-right" alt="arrow-right"></a>
+						</div>
+					</div>
+					<div class="project-card card-08 animate__animated animate__fadeInUp wow" data-wow-offset="40">
+						<img src="img/projects/tasklist.JPG" class="project-card-img" alt="project">
+						<div class="project-card-content">
+							<div class="project-card-text">
+								<h3 class="project-name">task list</h3>
+								<p class="project-description">vue js application</p>
+							</div>
+							<a href="projects/project01/index.html" class="project-link" target="_blank">see <img src="img/icons/arrow-right.png" class="arrow-right" alt="arrow-right"></a>
+						</div>
+					</div>
+					<div class="project-card card-09 animate__animated animate__fadeInUp wow" data-wow-offset="40">
+						<img src="img/projects/certificate.JPG" class="project-card-img" alt="project">
+						<div class="project-card-content">
+							<div class="project-card-text">
+								<h3 class="project-name">online certificate</h3>
+								<p class="project-description">landing page</p>
+							</div>
+							<a href="projects/project01/index.html" class="project-link" target="_blank">see <img src="img/icons/arrow-right.png" class="arrow-right" alt="arrow-right"></a>
+						</div>
+					</div>
+					<div class="project-card card-10 animate__animated animate__fadeInUp wow" data-wow-offset="40">
+						<img src="img/projects/business.JPG" class="project-card-img" alt="project">
+						<div class="project-card-content">
+							<div class="project-card-text">
+								<h3 class="project-name">business training</h3>
+								<p class="project-description">landing page</p>
+							</div>
+							<a href="projects/project01/index.html" class="project-link" target="_blank">see <img src="img/icons/arrow-right.png" class="arrow-right" alt="arrow-right"></a>
+						</div>
 					</div>
 				</div>
 			</div>
 		</section>
 
 		<section id="skills-section" class="skills-section">
-			<h2 class="section-heading skills-heading animate__animated animate__fadeInUp wow" data-wow-offset="40">_ DO</h2>
-			<div class="section-content">
+			<div class="section-content center-content">
+				<h2 class="section-heading skills-heading animate__animated animate__fadeInUp wow" data-wow-offset="40">_ DO</h2>
 				<div class="skills-container">
 					<div class="img-container animate__animated animate__fadeInUp wow" data-wow-offset="40">
-						<img src="img/icons/html-logo.webp" alt="html5" class="skill-logo" title="HTML5">
+						<a href="https://developer.mozilla.org/ru/docs/HTML/HTML5" class="skill-link" target="_blank">
+							<img src="img/icons/html-logo.webp" alt="html5" class="skill-logo" title="HTML5">
+						</a>
+						<div class="skill-description">
+							<h3 class="description-heading">HTML5</h3> 
+							<p class="description-text">I do clean, valid & semanthically correct layout. And I really think that it's important, because layout is the skeleton of the entire application.</p>
+						</div>
 					</div>
 					<div class="img-container animate__animated animate__fadeInUp wow" data-wow-offset="40">
-						<img src="img/icons/css3-logo.svg" alt="css3" class="skill-logo" title="CSS3">
+						<a href="https://developer.mozilla.org/ru/docs/Archive/CSS3" class="skill-link" target="_blank">
+							<img src="img/icons/css3-logo.svg" alt="css3" class="skill-logo" title="CSS3">
+						</a>
+						<div class="skill-description">
+							<h3 class="description-heading">CSS3</h3> 
+							<p class="description-text">Working with styles is one of my favourite in Web Development. Here I can improve all of my creativity ;) I also use a CSS frameworks such as Bootstrap and Materialize CSS.</p>
+						</div>
 					</div>
 					<div class="img-container animate__animated animate__fadeInUp wow" data-wow-offset="40">
-						<img src="img/icons/js-logo.png" alt="javascript" class="skill-logo" title="JavaScript">
+						<a href="https://developer.mozilla.org/ru/docs/Web/JavaScript" class="skill-link" target="_blank">
+							<img src="img/icons/js-logo.png" alt="javascript" class="skill-logo" title="JavaScript">
+						</a>
+						<div class="skill-description">
+							<h3 class="description-heading">JavaScript</h3> 
+							<p class="description-text">When we talk about magic, you know the first thing comes to mind. Of course - we can not imagine Development nowadays without JavaScript. It turns a web page into an Application, which helps users to get information with comfort and pleasure.</p>
+						</div>
 					</div>
 					<div class="img-container animate__animated animate__fadeInUp wow" data-wow-offset="40">
-						<img src="img/icons/vue-js-logo.png" alt="vueJS" class="skill-logo" title="Vue JS">
+						<a href="https://vuejs.org/" class="skill-link" target="_blank">
+							<img src="img/icons/vue-js-logo.png" alt="vueJS" class="skill-logo" title="Vue JS">
+						</a>
+						<div class="skill-description">
+							<h3 class="description-heading">Vue JS</h3> 
+							<p class="description-text">This framework blew me away with the first lines of documentation. It really rocks! So lightweight, fast and easy to understand that it's hard to believe.</p>
+						</div>
 					</div>
 					<div class="img-container animate__animated animate__fadeInUp wow" data-wow-offset="40">
-						<img src="img/icons/node-logo.png" alt="nodeJS" class="skill-logo" title="Node JS">
+						<a href="https://uk.wordpress.org/" class="skill-link" target="_blank">
+							<img src="img/icons/wp-logo-2.png" alt="wordpress" class="skill-logo" title="WordPress">
+						</a>
+						<div class="skill-description">
+							<h3 class="description-heading">Wordpress</h3> 
+							<p class="description-text">The most popular CMS in the world, so I couldn't just walk by. A great tool with many possibilities.</p>
+						</div>
 					</div>
 					<div class="img-container animate__animated animate__fadeInUp wow" data-wow-offset="40">
-						<img src="img/icons/wp-logo-2.png" alt="wordpress" class="skill-logo" title="WordPress">
+						<a href="https://nodejs.org/uk/" class="skill-link" target="_blank">
+							<img src="img/icons/node-logo.png" alt="nodeJS" class="skill-logo" title="Node JS">
+						</a>
+						<div class="skill-description">
+							<h3 class="description-heading">Node JS</h3> 
+							<p class="description-text">I don't do Backend, but I use Node JS for workflow optimization. </p>
+						</div>
 					</div>
 					<div class="img-container animate__animated animate__fadeInUp wow" data-wow-offset="40">
-						<img src="img/icons/figma-logo.png" alt="figma" class="skill-logo" title="Figma">
+						<a href="https://www.npmjs.com/" class="skill-link" target="_blank">
+							<img src="img/icons/npm.png" alt="npm" class="skill-logo" title="Node Package Manager">
+						</a>
+						<div class="skill-description">
+							<h3 class="description-heading">Node Package Manager</h3> 
+							<p class="description-text">Together with Node JS, Node Package Manager helps developer to increase work effectivity, so nowadays it is a must have skill.</p>
+						</div>
 					</div>
 					<div class="img-container animate__animated animate__fadeInUp wow" data-wow-offset="40">
-						<img src="img/icons/sass-logo.png" alt="sass" class="skill-logo" title="Sass">
+						<a href="https://gulpjs.com/" class="skill-link" target="_blank">
+							<img src="img/icons/gulp-logo.png" alt="gulp" class="skill-logo" title="Gulp JS">
+						</a>
+						<div class="skill-description">
+							<h3 class="description-heading">Gulp JS</h3> 
+							<p class="description-text">A beautiful task manager for those developers who value their time.</p>
+						</div>
 					</div>
 					<div class="img-container animate__animated animate__fadeInUp wow" data-wow-offset="40">
-						<img src="img/icons/gulp-logo.png" alt="gulp" class="skill-logo" title="Gulp">
+						<a href="https://sass-lang.com/" class="skill-link" target="_blank">
+							<img src="img/icons/sass-logo.png" alt="sass" class="skill-logo" title="Sass">
+						</a>
+						<div class="skill-description">
+							<h3 class="description-heading">Sass</h3> 
+							<p class="description-text">I use Sass preprocessor to make my work with styles faster and easier.</p>
+						</div>
 					</div>
 					<div class="img-container animate__animated animate__fadeInUp wow" data-wow-offset="40">
-						<img src="img/icons/fb-ads-logo.png" alt="fb-ads" class="skill-logo" title="Facebook Ads Manager">
+						<a href="https://www.figma.com/" class="skill-link" target="_blank">
+							<img src="img/icons/figma-logo.png" alt="figma" class="skill-logo" title="Figma">
+						</a>
+						<div class="skill-description">
+							<h3 class="description-heading">Figma</h3> 
+							<p class="description-text">I think Figma is one of the greatest applications to work with Web Design.</p>
+						</div>
+					</div>
+					<div class="img-container animate__animated animate__fadeInUp wow" data-wow-offset="40">
+						<a href="https://www.facebook.com/business" class="skill-link" target="_blank">
+							<img src="img/icons/fb-ads-logo.png" alt="fb-ads" class="skill-logo" title="Facebook Ads Manager">
+						</a>
+						<div class="skill-description">
+							<h3 class="description-heading">Facebook Ads Manager</h3> 
+							<p class="description-text">I also have an experience in launching and managing an Advertising campaigns in social networks, such as Facebook and Instagram.</p>
+						</div>
 					</div>
 					<p class="animate__animated animate__fadeInUp wow" data-wow-offset="40">to be continued ... :)</p>
 				</div>
@@ -255,9 +409,42 @@
 		</section>
 
 		<section id="contact-section" class="contact-section">
-			<h2 class="section-heading contact-heading animate__animated animate__fadeInUp wow" data-wow-offset="40">_ CONTACT</h2>
-			<div class="section-content">
+			<div class="center-content">
+				<div class="section-content">
+					<h2 class="section-heading mb-2 contact-heading animate__animated animate__fadeInUp wow" data-wow-offset="40">_ CONTACT</h2>
 
+					<div class="contact-wrapper">
+						<div class="phone-block">
+							<p class="space-01 animate__animated animate__fadeInUp wow" data-wow-offset="40">Here's my phone number:</p>
+							<p class="text-montserrat phone-number space-02 animate__animated animate__fadeInUp wow" data-wow-offset="40"><a href="tel:+380632117272">+38(063)211-72-72</a></p>
+							<div class="messenger-icons-block mb-2 animate__animated animate__fadeInUp wow" data-wow-offset="40">
+								<div class="contact-item mr-2">
+									<img src="img/icons/telegram.png" alt="telegram" class="footer-contact-icon" title="Telegram">
+								</div>
+								<div class="contact-item mr-2">
+									<img src="img/icons/whatsapp.png" alt="whatsapp" class="footer-contact-icon" title="Whatsapp">
+								</div>
+								<div class="contact-item mr-2">
+									<img src="img/icons/viber.png" alt="viber" class="footer-contact-icon" title="Viber">
+								</div>
+							</div>
+						</div>
+
+						<div class="contact-options-block">
+							<ul class="contact-options-list">
+								<li class="contact-options-item space-01 animate__animated animate__fadeInUp wow"><a href="projects-section" class="contact-option-link">portfolio</a></li>
+								<li class="contact-options-item space-01 animate__animated animate__fadeInUp wow"><a href="#" class="contact-option-link">more about me</a></li>
+								<li class="contact-options-item space-01 animate__animated animate__fadeInUp wow"><a href="#skills-section" class="contact-option-link">skills</a></li>
+								<li class="contact-options-item space-01 animate__animated animate__fadeInUp wow"><a href="https://github.com/yalandr/" class="contact-option-link" target="_blank">github</a></li>
+							</ul>
+						</div>
+
+						<div class="email-block">
+							<p class="space-01 animate__animated animate__fadeInUp wow" data-wow-offset="40">and that's my email:</p>
+							<p class="text-montserrat phone-number space-02 mb-2 animate__animated animate__fadeInUp wow" data-wow-offset="40"><a href="mailto:yalunin077@gmail.com">yalunin077@gmail.com</a></p>
+						</div>
+					</div>
+				</div>
 			</div>
 		</section>
 	</main>
@@ -276,7 +463,6 @@
 	<script>
         new WOW().init();
     </script>
-	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script><!--VueJS-->
 	<script src="js/main.js"></script>
 </body>
 </html>
