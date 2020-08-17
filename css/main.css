@@ -710,7 +710,7 @@ body {
 		display: block;
 		background: #000;
 		padding: 5rem 2rem;
-		transition: .3s;
+		transition: .6s;
 		width: 50%;
 		height: 100vh;
 		position: fixed;
@@ -725,6 +725,7 @@ body {
 		position: absolute;
 		top: 6%;
 		right: 10%;
+		transition: .6s;
 	}
 	.mobile-nav-item {
 		list-style: none;
