@@ -183,11 +183,6 @@ body {
 	transition: .3s;
 }
 
-.intro-heading:hover {
-	background: #262676;
-	cursor: pointer;
-}
-
 .website-scheme {
 	width: 50rem;
 	height: 25rem;
@@ -568,13 +563,13 @@ body {
 	height: auto;
 	padding: 1.5rem;
 	display: flex;
-	border: 1px solid #eee;
+	border-bottom: 1px solid #eee;
 	transition: .3s;
 	-moz-transition: .3s;
 }
 
 .img-container:hover {
-	box-shadow: 0 0 15px #999;
+	box-shadow: 0 0 15px #ddd;
 }
 
 .skill-link {
@@ -599,13 +594,18 @@ body {
 .skill-description {
 	width: 85%;
 	color: #555;
+	letter-spacing: 1px;
+	line-height: 1.1rem;
 }
 
 .description-heading {
 	font-size: 1.4rem;
 	font-weight: 800;
 	letter-spacing: .1rem;
+	margin: 0 0 .5rem 0;
 }
+
+.continued-p {margin-top: 1rem;}
 
 
 
@@ -614,8 +614,15 @@ body {
 
 .contact-section {
 	background: #111;
-	padding: 5rem 0;
+	padding: 0 0 5rem 0;
 }
+
+.contact-wrapper {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+}
+
+.phone-block {order: 1;}
 
 .phone-number {
 	font-size: 2rem;
@@ -634,18 +641,11 @@ body {
 	padding: .5rem 0;
 }
 
-.contact-wrapper {
-	display: grid;
-	grid-template-columns: 2fr 1fr;
-}
-
 .footer-contact-icon {
 	margin-top: .5rem;
-	width: 2.5rem;
-	height: 2.5rem;
+	width: 2rem;
+	height: 2rem;
 }
-
-.phone-block {order: 1;}
 
 .contact-options-block {
 	padding: 2rem 0 1rem 4rem;
@@ -684,12 +684,13 @@ body {
 		background: linear-gradient(45deg, #000, #333);
 		text-align: center;
 		padding: 1.5rem 2rem;
+		box-shadow: 0 0 8px #000;
 		position: fixed;
 		z-index: 32;
 	}
 	.mobile-menu-btn {
-		width: 5rem;
-		height: 5rem;
+		width: 4rem;
+		height: 4rem;
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -720,10 +721,10 @@ body {
 		overflow: auto;
 	}
 	.close-icon {
-		width: 1rem;
-		height: 1rem;
+		width: 2rem;
+		height: 2rem;
 		position: absolute;
-		top: 6%;
+		top: 4%;
 		right: 10%;
 		transition: .6s;
 	}
@@ -764,29 +765,41 @@ body {
 	.email-block {order: 2;}
 }
 
+
+
+
 @media (max-width: 769px) {
+	.main-logo {
+		font-size: 1.6rem;
+		line-height: 1.2rem;
+	}
 	.intro-heading-block {width: 90%;}
 	.website-scheme {
 		width: 100%;
 		margin: 0;
 	}
+	.yellow-block, .blue-block {padding: 2rem;}
+	.green-little-block {width: 4.9rem;}
 	.center-content {width: 80%;}
 	.projects-content {width: 100%;}
 	.project-card {
 		height: 22rem;
 		padding: 2rem;
 	}
-	.continue-p {margin-top: 1rem;}
 	.contact-wrapper {display: block;}
 }
+
+
+
 
 @media (max-width: 479px) {
 
 	.mobile-menu-btn {
 		width: 3rem;
 		height: 3rem;
+		top: .8rem;
+		left: .8rem;
 	}
-
 	.mobile-menu {
 		width: 100%;
 		height: 100vh;
@@ -795,7 +808,6 @@ body {
 		left: -100%;
 		z-index: 99;
 	}
-
 	.mobile-nav-item {
 		color: #fff;
 		font-weight: 700;
@@ -803,12 +815,16 @@ body {
 		font-size: 2.5rem;
 		padding: 1rem;
 	}
-
 	.intro-section {display: none;}
 	.mobile-header {
 		padding: 1rem 2rem;
 		position: static;
 	}
+	.main-logo {
+		font-size: 1.2rem;
+		line-height: 1rem;
+	}
+	.main-logo-subtitle {margin-top: .5rem;}
 	.section-content {width: 90%; padding: 1rem;}
 	.about-heading {display: none;}
 	.center-content {width: 90%;}
@@ -833,6 +849,9 @@ body {
 		width: auto;
 		max-height: 6rem;
 		height: auto;
+	}
+	.description-heading {
+		margin: .5rem 0;
 	}
 	.contact-wrapper {display: block;}
 	.phone-number {font-size: 1.2rem;}
