@@ -195,7 +195,9 @@ body {
 .green-block {
 	width: 100%;
 	height: 20%;
-	border: 2px solid #76F34C;
+	background: #76F34C;
+	border-radius: 4px;
+	box-shadow: 0 3px 6px #333;
 	padding: 0 3rem;
 	display: flex;
 	justify-content: space-between;
@@ -213,6 +215,7 @@ body {
 	height: 3rem;
 	border-radius: 100%;
 	background: linear-gradient(60deg, #C02EEA, #82A2C4);
+	box-shadow: 0 3px 6px #333;
 	animation: fadeInBlue 3600ms linear;
 }
 
@@ -227,6 +230,7 @@ body {
 	height: 1rem;
 	border-radius: 100px;
 	background: linear-gradient(60deg, #74A8D0, #DCE0E4);
+	box-shadow: 0 3px 6px #333;
 	animation: fadeInWhite 3800ms linear;
 }
 
@@ -241,6 +245,7 @@ body {
 	height: 2rem;
 	border-radius: 1rem;
 	background: linear-gradient(60deg, #F3944D, #F6F992);
+	box-shadow: 0 3px 6px #333;
 	animation: fadeInYellow 4000ms linear;
 }
 
@@ -260,7 +265,9 @@ body {
 .pink-block {
 	width: 18%;
 	height: 100%;
-	border: 2px solid #DF65F8;
+	background: #DF65F8;
+	box-shadow: 0 3px 6px #333;
+	border-radius: 4px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -284,7 +291,9 @@ body {
 .yellow-block {
 	width: 100%;
 	height: 55%;
-	border: 2px solid #fed330;
+	background: #fed330;
+	box-shadow: 0 3px 6px #333;
+	border-radius: 4px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -313,7 +322,9 @@ body {
 .blue-block {
 	width: 100%;
 	height: 43%;
-	border: 2px solid #5CA8F4;
+	background:#5CA8F4; 
+	border-radius: 4px;
+	box-shadow: 0 3px 6px #333;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -330,6 +341,7 @@ body {
 	width: 5.6rem;
 	height: 4rem;
 	background: linear-gradient(60deg, #DBF84B, #6DF84B);
+	box-shadow: 0 3px 6px #333;
 	animation: fadeInGreen 4600ms linear;
 }
 
@@ -352,7 +364,9 @@ body {
 .violet-block {
 	width: 100%;
 	height: 65%;
-	border: 2px solid #9D56F0;
+	background: #9D56F0;
+	border-radius: 4px;
+	box-shadow: 0 3px 6px #333;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -368,7 +382,9 @@ body {
 .red-block {
 	width: 100%;
 	height: 33%;
-	border: 2px solid #F56E80;
+	background: #F56E80;
+	border-radius: 4px;
+	box-shadow: 0 3px 6px #333;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -381,6 +397,9 @@ body {
 	100%{transform: translateX(0);}
 }
 
+
+
+/*==== Sections ==========================================*/
 
 .section-heading {
 	width: 100%;
@@ -454,6 +473,7 @@ body {
 	max-height: 100%;
 	opacity: .8;
 	cursor: pointer;
+	filter: drop-shadow(0 3px 2px #333);
 	transition: .3s;
 }
 
@@ -476,7 +496,7 @@ body {
 
 .project-card {
 	height: 25rem;
-	padding: 4rem;
+	padding: 2rem 4rem;
 }
 
 .card-01 {background: linear-gradient(45deg, #f953c6, #b91d73);}
@@ -497,8 +517,8 @@ body {
 }
 
 .project-card-img:hover {
-	transform: scale(0.97);
-	box-shadow: 0 0 5px #222;
+	transform: scale(0.98);
+	box-shadow: 0 0 6px #222;
 }
 
 .project-card-content {
@@ -515,10 +535,9 @@ body {
 	font-weight: 700;
 	color: #fff;
 	text-shadow: 0 0 5px #222;
-	transition: .3s;
 }
 
-.project-name:hover {padding-left: 3px;}
+.project-card-text ul {padding-left: 1rem; color: #fff;}
 
 .arrow-right {
 	width: 2rem;
@@ -538,7 +557,7 @@ body {
 .project-link:hover {
 	background: #DF65F8;
 	color: #fff;
-	box-shadow: 0 0 5px #222;
+	box-shadow: 0 3px 6px #222;
 	border: none;
 }
 
@@ -569,7 +588,7 @@ body {
 }
 
 .img-container:hover {
-	box-shadow: 0 0 15px #ddd;
+	box-shadow: 0 3px 6px #ddd;
 }
 
 .skill-link {
@@ -583,6 +602,7 @@ body {
 	max-height: 4rem;
 	height: auto;
 	opacity: .8;
+	filter: drop-shadow(0 3px 3px #333);
 	transition: .3s;
 	cursor: pointer;
 }
