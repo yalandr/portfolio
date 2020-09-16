@@ -673,18 +673,33 @@ body {
 .contact-icon {
 	max-width: 100%;
 	max-height: 100%;
-	opacity: .8;
 	cursor: pointer;
 	-webkit-filter: drop-shadow(0 3px 2px #333);
 	        filter: drop-shadow(0 3px 2px #333);
-	-webkit-transition: .3s;
-	-o-transition: .3s;
-	transition: .3s;
+	-webkit-transition: .4s;
+	-o-transition: .4s;
+	transition: .4s;
 }
 
-.contact-icon:hover { 
-	opacity: 1;
-	padding-bottom: 2px;
+.contact-icon:hover {
+	-webkit-animation: iconScale .4s ease;
+	        animation: iconScale .4s ease;
+}
+
+@-webkit-keyframes iconScale {
+	0% {-webkit-transform: scale(0.95);transform: scale(0.95);}
+	25% {-webkit-transform: scale(1.2);transform: scale(1.2);}
+	50% {-webkit-transform: scale(0.9);transform: scale(0.9);}
+	75% {-webkit-transform: scale(1.1);transform: scale(1.1);}
+	100% {-webkit-transform: scale(1);transform: scale(1);}
+}
+
+@keyframes iconScale {
+	0% {-webkit-transform: scale(0.95);transform: scale(0.95);}
+	25% {-webkit-transform: scale(1.2);transform: scale(1.2);}
+	50% {-webkit-transform: scale(0.9);transform: scale(0.9);}
+	75% {-webkit-transform: scale(1.1);transform: scale(1.1);}
+	100% {-webkit-transform: scale(1);transform: scale(1);}
 }
 
 
