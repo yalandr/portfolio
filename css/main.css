@@ -736,17 +736,15 @@ body {
 .project-card-img {
 	width: 100%;
 	height: auto;
+	border-radius: 8px;
 	-webkit-transition: .3s;
 	-o-transition: .3s;
 	transition: .3s;
 }
 
 .project-card-img:hover {
-	-webkit-transform: scale(0.98);
-	    -ms-transform: scale(0.98);
-	        transform: scale(0.98);
-	-webkit-box-shadow: 0 0 6px #222;
-	        box-shadow: 0 0 6px #222;
+	-webkit-box-shadow: 0 6px 8px #222;
+	        box-shadow: 0 6px 8px #222;
 }
 
 .project-card-content {
@@ -765,7 +763,7 @@ body {
 
 .project-name {
 	font-family: 'Montserrat', sans-serif;
-	font-size: 1.8rem;
+	font-size: 1.6rem;
 	font-weight: 700;
 	color: #fff;
 	text-shadow: 0 0 5px #222;
@@ -774,30 +772,31 @@ body {
 .project-card-text ul {padding-left: 1rem; color: #fff;}
 
 .arrow-right {
-	width: 2rem;
+	width: 1.6rem;
 	height: auto;
 }
 
 .project-link {
-	width: 7rem;
+	width: 8rem;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-pack: justify;
-	    -ms-flex-pack: justify;
-	        justify-content: space-between;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
 	-webkit-box-align: center;
 	    -ms-flex-align: center;
 	        align-items: center;
+	border-radius: 6px;
 	border: 1px solid #fff;
-	padding: .5rem 1rem;
+	padding: .5rem 0;
 	-webkit-transition: .3s;
 	-o-transition: .3s;
 	transition: .3s;
 }
 
 .project-link:hover {
-	background: #DF65F8;
+	background: var(--pink);
+	border: 1px solid var(--pink);
 	color: #fff;
 	-webkit-box-shadow: 0 3px 6px #222;
 	        box-shadow: 0 3px 6px #222;
