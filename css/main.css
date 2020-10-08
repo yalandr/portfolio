@@ -807,7 +807,8 @@ body {
 	transition: .3s;
 }
 
-.project-link:hover {
+.project-link:hover,
+.project-link:focus {
 	background: var(--pink);
 	border: 1px solid var(--pink);
 	color: #fff;
