@@ -117,7 +117,11 @@ body {
 	transition: .3s;
 }
 
-.nav-list-item:hover {background: #222;}
+.nav-list-item:hover,
+.nav-list-item:focus,
+.nav-list-item:active {
+	background: #222;
+}
 
 .nav-item-block {
 	width: 100%;
