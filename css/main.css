@@ -731,7 +731,8 @@ body {
 }
 
 .project-card {
-	height: 25rem;
+	min-height: 25rem;
+	max-height: 29rem;
 	padding: 2rem 4rem;
 }
 
